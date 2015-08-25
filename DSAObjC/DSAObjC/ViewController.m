@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "HashTable.h"
 #import "WordBreak.h"
 #import "AddBinary.h"
 #import "TwoSum.h"
 #import "TwoSumSorted.h"
-#import "TwoSumDataStructure.h"
+#import "TwoSumDataStructureFastAdd.h"
 #import "ValidPalindrome.h"
 #import "StrStr.h"
 #import "ReverseWords.h"
@@ -26,7 +27,6 @@
 #import "PalindromeNumber.h"
 #import "AddTwoNumbers.h"
 #import "SwapNodesInPairs.h"
-#import "HashTable.h"
 #import "MaxSumSubArray.h"
 #import "ClimbingStairs.h"
 #import "ValidateBinarySearchTree.h"
@@ -50,7 +50,7 @@
     l.backgroundColor = [UIColor blackColor];
     [self.view addSubview:l];
     
-    [[SortedArrayToBalancedBinarySearchTree new] runTheProblem];
+    [[TwoSumDataStructureFastAdd new] runTheProblem];
     
 //    HashTable *ht = [[HashTable alloc] initWithSize:1000];
 //    [ht put:@"ab" object:@"albert einstein"];

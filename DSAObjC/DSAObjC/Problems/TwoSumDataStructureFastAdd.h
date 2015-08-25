@@ -8,7 +8,7 @@
 
 #import "RunProblem.h"
 
-@interface TwoSumDataStructure : RunProblem
+@interface TwoSumDataStructureFastAdd : RunProblem
 
 - (void)add:(NSInteger)input;
 - (BOOL)find:(NSInteger)val;

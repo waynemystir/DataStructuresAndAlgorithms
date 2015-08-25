@@ -42,7 +42,7 @@
 		B0CFFD131B8A248A0075AB74 /* StrStr.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFCF01B8A248A0075AB74 /* StrStr.m */; };
 		B0CFFD141B8A248A0075AB74 /* SwapNodesInPairs.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFCF21B8A248A0075AB74 /* SwapNodesInPairs.m */; };
 		B0CFFD151B8A248A0075AB74 /* TwoSum.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFCF41B8A248A0075AB74 /* TwoSum.m */; };
-		B0CFFD161B8A248A0075AB74 /* TwoSumDataStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFCF61B8A248A0075AB74 /* TwoSumDataStructure.m */; };
+		B0CFFD161B8A248A0075AB74 /* TwoSumDataStructureFastAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFCF61B8A248A0075AB74 /* TwoSumDataStructureFastAdd.m */; };
 		B0CFFD171B8A248A0075AB74 /* TwoSumSorted.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFCF81B8A248A0075AB74 /* TwoSumSorted.m */; };
 		B0CFFD181B8A248A0075AB74 /* ValidateBinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFCFA1B8A248A0075AB74 /* ValidateBinarySearchTree.m */; };
 		B0CFFD191B8A248A0075AB74 /* ValidNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFCFC1B8A248A0075AB74 /* ValidNumber.m */; };
@@ -130,8 +130,8 @@
 		B0CFFCF21B8A248A0075AB74 /* SwapNodesInPairs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwapNodesInPairs.m; sourceTree = "<group>"; };
 		B0CFFCF31B8A248A0075AB74 /* TwoSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoSum.h; sourceTree = "<group>"; };
 		B0CFFCF41B8A248A0075AB74 /* TwoSum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoSum.m; sourceTree = "<group>"; };
-		B0CFFCF51B8A248A0075AB74 /* TwoSumDataStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoSumDataStructure.h; sourceTree = "<group>"; };
-		B0CFFCF61B8A248A0075AB74 /* TwoSumDataStructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoSumDataStructure.m; sourceTree = "<group>"; };
+		B0CFFCF51B8A248A0075AB74 /* TwoSumDataStructureFastAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoSumDataStructureFastAdd.h; sourceTree = "<group>"; };
+		B0CFFCF61B8A248A0075AB74 /* TwoSumDataStructureFastAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoSumDataStructureFastAdd.m; sourceTree = "<group>"; };
 		B0CFFCF71B8A248A0075AB74 /* TwoSumSorted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoSumSorted.h; sourceTree = "<group>"; };
 		B0CFFCF81B8A248A0075AB74 /* TwoSumSorted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoSumSorted.m; sourceTree = "<group>"; };
 		B0CFFCF91B8A248A0075AB74 /* ValidateBinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateBinarySearchTree.h; sourceTree = "<group>"; };
@@ -279,60 +279,60 @@
 		B0CFFCCA1B8A248A0075AB74 /* Problems */ = {
 			isa = PBXGroup;
 			children = (
-				B0CFFCCB1B8A248A0075AB74 /* AddBinary.h */,
-				B0CFFCCC1B8A248A0075AB74 /* AddBinary.m */,
-				B0CFFCCD1B8A248A0075AB74 /* AddTwoNumbers.h */,
-				B0CFFCCE1B8A248A0075AB74 /* AddTwoNumbers.m */,
-				B0CFFCCF1B8A248A0075AB74 /* Atoi.h */,
-				B0CFFCD01B8A248A0075AB74 /* Atoi.m */,
-				B0CFFCD11B8A248A0075AB74 /* ClimbingStairs.h */,
-				B0CFFCD21B8A248A0075AB74 /* ClimbingStairs.m */,
-				B0CFFCD31B8A248A0075AB74 /* IsHeightBalancedTree.h */,
-				B0CFFCD41B8A248A0075AB74 /* IsHeightBalancedTree.m */,
-				B0CFFCD51B8A248A0075AB74 /* IsOneEditDistance.h */,
-				B0CFFCD61B8A248A0075AB74 /* IsOneEditDistance.m */,
-				B0CFFCD71B8A248A0075AB74 /* LongestPalindromicSubstring.h */,
-				B0CFFCD81B8A248A0075AB74 /* LongestPalindromicSubstring.m */,
-				B0CFFCD91B8A248A0075AB74 /* LongestSubstringWithoutRepeatingChars.h */,
-				B0CFFCDA1B8A248A0075AB74 /* LongestSubstringWithoutRepeatingChars.m */,
-				B0CFFCDB1B8A248A0075AB74 /* MaximumDepthBinaryTree.h */,
-				B0CFFCDC1B8A248A0075AB74 /* MaximumDepthBinaryTree.m */,
-				B0CFFCDD1B8A248A0075AB74 /* MaxSumSubArray.h */,
-				B0CFFCDE1B8A248A0075AB74 /* MaxSumSubArray.m */,
-				B0CFFCDF1B8A248A0075AB74 /* MinimumDepthBinaryTree.h */,
-				B0CFFCE01B8A248A0075AB74 /* MinimumDepthBinaryTree.m */,
-				B0CFFCE11B8A248A0075AB74 /* MissingRanges.h */,
-				B0CFFCE21B8A248A0075AB74 /* MissingRanges.m */,
-				B0CFFCE31B8A248A0075AB74 /* PalindromeNumber.h */,
-				B0CFFCE41B8A248A0075AB74 /* PalindromeNumber.m */,
-				B0CFFCE51B8A248A0075AB74 /* PlusOne.h */,
-				B0CFFCE61B8A248A0075AB74 /* PlusOne.m */,
-				B0CFFCE71B8A248A0075AB74 /* ReverseInteger.h */,
-				B0CFFCE81B8A248A0075AB74 /* ReverseInteger.m */,
-				B0CFFCE91B8A248A0075AB74 /* ReverseWords.h */,
-				B0CFFCEA1B8A248A0075AB74 /* ReverseWords.m */,
 				B0CFFCEB1B8A248A0075AB74 /* RunProblem.h */,
 				B0CFFCEC1B8A248A0075AB74 /* RunProblem.m */,
-				B0CFFCED1B8A248A0075AB74 /* SortedArrayToBalancedBinarySearchTree.h */,
-				B0CFFCEE1B8A248A0075AB74 /* SortedArrayToBalancedBinarySearchTree.m */,
-				B0CFFCEF1B8A248A0075AB74 /* StrStr.h */,
-				B0CFFCF01B8A248A0075AB74 /* StrStr.m */,
-				B0CFFCF11B8A248A0075AB74 /* SwapNodesInPairs.h */,
-				B0CFFCF21B8A248A0075AB74 /* SwapNodesInPairs.m */,
-				B0CFFCF31B8A248A0075AB74 /* TwoSum.h */,
-				B0CFFCF41B8A248A0075AB74 /* TwoSum.m */,
-				B0CFFCF51B8A248A0075AB74 /* TwoSumDataStructure.h */,
-				B0CFFCF61B8A248A0075AB74 /* TwoSumDataStructure.m */,
-				B0CFFCF71B8A248A0075AB74 /* TwoSumSorted.h */,
-				B0CFFCF81B8A248A0075AB74 /* TwoSumSorted.m */,
-				B0CFFCF91B8A248A0075AB74 /* ValidateBinarySearchTree.h */,
-				B0CFFCFA1B8A248A0075AB74 /* ValidateBinarySearchTree.m */,
-				B0CFFCFB1B8A248A0075AB74 /* ValidNumber.h */,
-				B0CFFCFC1B8A248A0075AB74 /* ValidNumber.m */,
-				B0CFFCFD1B8A248A0075AB74 /* ValidPalindrome.h */,
-				B0CFFCFE1B8A248A0075AB74 /* ValidPalindrome.m */,
 				B0CFFCFF1B8A248A0075AB74 /* WordBreak.h */,
 				B0CFFD001B8A248A0075AB74 /* WordBreak.m */,
+				B0CFFCCB1B8A248A0075AB74 /* AddBinary.h */,
+				B0CFFCCC1B8A248A0075AB74 /* AddBinary.m */,
+				B0CFFCF31B8A248A0075AB74 /* TwoSum.h */,
+				B0CFFCF41B8A248A0075AB74 /* TwoSum.m */,
+				B0CFFCF71B8A248A0075AB74 /* TwoSumSorted.h */,
+				B0CFFCF81B8A248A0075AB74 /* TwoSumSorted.m */,
+				B0CFFCF51B8A248A0075AB74 /* TwoSumDataStructureFastAdd.h */,
+				B0CFFCF61B8A248A0075AB74 /* TwoSumDataStructureFastAdd.m */,
+				B0CFFCFD1B8A248A0075AB74 /* ValidPalindrome.h */,
+				B0CFFCFE1B8A248A0075AB74 /* ValidPalindrome.m */,
+				B0CFFCEF1B8A248A0075AB74 /* StrStr.h */,
+				B0CFFCF01B8A248A0075AB74 /* StrStr.m */,
+				B0CFFCE91B8A248A0075AB74 /* ReverseWords.h */,
+				B0CFFCEA1B8A248A0075AB74 /* ReverseWords.m */,
+				B0CFFCCF1B8A248A0075AB74 /* Atoi.h */,
+				B0CFFCD01B8A248A0075AB74 /* Atoi.m */,
+				B0CFFCFB1B8A248A0075AB74 /* ValidNumber.h */,
+				B0CFFCFC1B8A248A0075AB74 /* ValidNumber.m */,
+				B0CFFCD91B8A248A0075AB74 /* LongestSubstringWithoutRepeatingChars.h */,
+				B0CFFCDA1B8A248A0075AB74 /* LongestSubstringWithoutRepeatingChars.m */,
+				B0CFFCE11B8A248A0075AB74 /* MissingRanges.h */,
+				B0CFFCE21B8A248A0075AB74 /* MissingRanges.m */,
+				B0CFFCD71B8A248A0075AB74 /* LongestPalindromicSubstring.h */,
+				B0CFFCD81B8A248A0075AB74 /* LongestPalindromicSubstring.m */,
+				B0CFFCD51B8A248A0075AB74 /* IsOneEditDistance.h */,
+				B0CFFCD61B8A248A0075AB74 /* IsOneEditDistance.m */,
+				B0CFFCE71B8A248A0075AB74 /* ReverseInteger.h */,
+				B0CFFCE81B8A248A0075AB74 /* ReverseInteger.m */,
+				B0CFFCE51B8A248A0075AB74 /* PlusOne.h */,
+				B0CFFCE61B8A248A0075AB74 /* PlusOne.m */,
+				B0CFFCE31B8A248A0075AB74 /* PalindromeNumber.h */,
+				B0CFFCE41B8A248A0075AB74 /* PalindromeNumber.m */,
+				B0CFFCCD1B8A248A0075AB74 /* AddTwoNumbers.h */,
+				B0CFFCCE1B8A248A0075AB74 /* AddTwoNumbers.m */,
+				B0CFFCF11B8A248A0075AB74 /* SwapNodesInPairs.h */,
+				B0CFFCF21B8A248A0075AB74 /* SwapNodesInPairs.m */,
+				B0CFFCDD1B8A248A0075AB74 /* MaxSumSubArray.h */,
+				B0CFFCDE1B8A248A0075AB74 /* MaxSumSubArray.m */,
+				B0CFFCD11B8A248A0075AB74 /* ClimbingStairs.h */,
+				B0CFFCD21B8A248A0075AB74 /* ClimbingStairs.m */,
+				B0CFFCF91B8A248A0075AB74 /* ValidateBinarySearchTree.h */,
+				B0CFFCFA1B8A248A0075AB74 /* ValidateBinarySearchTree.m */,
+				B0CFFCDB1B8A248A0075AB74 /* MaximumDepthBinaryTree.h */,
+				B0CFFCDC1B8A248A0075AB74 /* MaximumDepthBinaryTree.m */,
+				B0CFFCDF1B8A248A0075AB74 /* MinimumDepthBinaryTree.h */,
+				B0CFFCE01B8A248A0075AB74 /* MinimumDepthBinaryTree.m */,
+				B0CFFCD31B8A248A0075AB74 /* IsHeightBalancedTree.h */,
+				B0CFFCD41B8A248A0075AB74 /* IsHeightBalancedTree.m */,
+				B0CFFCED1B8A248A0075AB74 /* SortedArrayToBalancedBinarySearchTree.h */,
+				B0CFFCEE1B8A248A0075AB74 /* SortedArrayToBalancedBinarySearchTree.m */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -451,7 +451,7 @@
 				B0CFFD0B1B8A248A0075AB74 /* MinimumDepthBinaryTree.m in Sources */,
 				B0CFFD1A1B8A248A0075AB74 /* ValidPalindrome.m in Sources */,
 				B0CFFC931B8A23710075AB74 /* ViewController.m in Sources */,
-				B0CFFD161B8A248A0075AB74 /* TwoSumDataStructure.m in Sources */,
+				B0CFFD161B8A248A0075AB74 /* TwoSumDataStructureFastAdd.m in Sources */,
 				B0CFFD121B8A248A0075AB74 /* SortedArrayToBalancedBinarySearchTree.m in Sources */,
 				B0CFFD051B8A248A0075AB74 /* IsHeightBalancedTree.m in Sources */,
 				B0CFFD131B8A248A0075AB74 /* StrStr.m in Sources */,
@@ -668,6 +668,7 @@
 				B0CFFCAC1B8A23710075AB74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0CFFCAD1B8A23710075AB74 /* Build configuration list for PBXNativeTarget "DSAObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -676,6 +677,7 @@
 				B0CFFCAF1B8A23710075AB74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

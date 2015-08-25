@@ -19,8 +19,8 @@
 //    NSArray *numbers = @[@1, @2, @3, @12];
 //    NSInteger target = 15;
     NSArray *numbers = @[@1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13, @14, @15, @16, @17];
-    NSInteger target = 291;
-    NSArray *twoSumSorted = [self twoSumSorted:numbers target:target];
+    NSInteger target = 29;
+    NSArray *twoSumSorted = [self twoSumSortedOptimized:numbers target:target];
     if (twoSumSorted.count == 4) {
         NSInteger i = [twoSumSorted[0] integerValue];
         NSInteger x = [twoSumSorted[1] integerValue];
@@ -30,6 +30,26 @@
     } else {
         NSLog(@"No such elements found. TC:%f", timeComplexity);
     }
+}
+
+- (NSArray *)twoSumSortedOptimized:(NSArray *)numbers target:(NSInteger)target {
+    NSUInteger i = 0, j = numbers.count - 1;
+    while (i < j) {
+        timeComplexity++;
+        NSInteger valAtI = [numbers[i] integerValue];
+        NSInteger valAtJ = [numbers[j] integerValue];
+        if (valAtI + valAtJ == target) {
+            return [NSArray arrayWithObjects:[NSNumber numberWithInteger:i],
+                    numbers[i],
+                    [NSNumber numberWithInteger:j],
+                    numbers[j], nil];
+        } else if (valAtI + valAtJ < target) {
+            i++;
+        } else {
+            j--;
+        }
+    }
+    return nil;
 }
 
 - (NSArray *)twoSumSorted:(NSArray *)numbers target:(NSInteger)target {

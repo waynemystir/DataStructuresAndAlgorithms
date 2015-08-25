@@ -22,7 +22,7 @@
 
 - (void)runTheProblem {
     NSString *a = @"111", *b = @"10";
-    NSString *sum = [self addBinaryOld:a binary2:b];
+    NSString *sum = [self addBinary:a binary2:b];
     NSLog(@"%@ + %@ = %@", a, b, sum);
 }
 
@@ -34,11 +34,11 @@
     while (i >= 0 || j >= 0) {
         int sum = carry;
         if (i >= 0) {
-            int ath = [[a substringWithRange:NSMakeRange(i--, 1)] intValue];
+            int ath = ([a characterAtIndex:i--] - '0');
             sum += ath;
         }
         if (j >= 0) {
-            int bth = [[b substringWithRange:NSMakeRange(j--, 1)] intValue];
+            int bth = ([b characterAtIndex:j--] - '0');
             sum += bth;
         }
         carry = sum / 2;
