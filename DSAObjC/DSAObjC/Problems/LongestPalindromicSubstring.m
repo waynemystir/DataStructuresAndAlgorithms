@@ -12,7 +12,9 @@
 
 - (void)runTheProblem {
 //    NSString *s = @"ehbvelbjabtyuibaelknbetgnelkfb";
-    NSString *s = @"A man, a plan, a canal: Panama";
+//    NSString *s = @"abcdef";
+    NSString *s = @"bbbbbbbbbbbbbbbbbbbb";
+//    NSString *s = @"A man, a plan, a canal: Panama";
 //    NSString *s = nil;
 //    NSString *s = @"amanaplanacanalpanama";
     NSLog(@"%@: string:'%@' longest palindrome:'%@' TC:%f", self.class, s, [self longestPalindrome:s], timeComplexity);
@@ -50,7 +52,8 @@
     while (L >= 0 && R < s.length && [s characterAtIndex:L] == [s characterAtIndex:R]) {
         timeComplexity++;
         L--;
-        R++; }
+        R++;
+    }
     return R - L - 1;
 }
 

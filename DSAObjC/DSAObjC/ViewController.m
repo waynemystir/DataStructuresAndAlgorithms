@@ -8,11 +8,13 @@
 
 #import "ViewController.h"
 #import "HashTable.h"
+#import "WisDigit.h"
 #import "WordBreak.h"
 #import "AddBinary.h"
 #import "TwoSum.h"
 #import "TwoSumSorted.h"
 #import "TwoSumDataStructureFastAdd.h"
+#import "TwoSumDataStructureFastFind.h"
 #import "ValidPalindrome.h"
 #import "StrStr.h"
 #import "ReverseWords.h"
@@ -50,7 +52,9 @@
     l.backgroundColor = [UIColor blackColor];
     [self.view addSubview:l];
     
-    [[TwoSumDataStructureFastAdd new] runTheProblem];
+//    [[WisDigit new] runThis];
+    
+    [[LongestPalindromicSubstring new] runTheProblem];
     
 //    HashTable *ht = [[HashTable alloc] initWithSize:1000];
 //    [ht put:@"ab" object:@"albert einstein"];

@@ -28,12 +28,44 @@ NSInteger const MinDiv10 = NSIntegerMin / 10;
 @implementation Atoi
 
 - (void)runTheProblem {
-    NSString *ascii = @"-1234567890123456";
+    NSString *ascii = @"   -1234567890123456  \n  ";
     NSInteger value = [self atoi:ascii];
     NSLog(@"%@: atoi:%ld TC:%f", self.class, value, timeComplexity);
 }
 
 - (NSInteger)atoi:(NSString *)ascii {
+    NSInteger i = 0, n = ascii.length;
+    while (i < n && [[NSCharacterSet whitespaceAndNewlineCharacterSet] characterIsMember:[ascii characterAtIndex:i]]) {
+        i++;
+    }
+    int sign = 1;
+    if (i < n && [ascii characterAtIndex:i] == '+') {
+        i++;
+    } else if (i < n && [ascii characterAtIndex:i] == '-') {
+        sign = -1;
+        i++;
+    }
+    NSInteger num = 0;
+    while (i < n) {
+        char digit = [ascii characterAtIndex:i];
+        
+        if (isdigit(digit) == 0) {
+            break;
+        }
+        
+        digit = digit - '0';
+        
+        if (num > MaxDiv10 || (num == MaxDiv10 && digit >= 7)) {
+            return sign == 1 ? NSIntegerMax : NSIntegerMin;
+        }
+        
+        num = num * 10 + digit;
+        i++;
+    }
+    return sign * num;
+}
+
+- (NSInteger)atoiW:(NSString *)ascii {
     ascii = [ascii stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     if (ascii.length == 0) {
         return 0;

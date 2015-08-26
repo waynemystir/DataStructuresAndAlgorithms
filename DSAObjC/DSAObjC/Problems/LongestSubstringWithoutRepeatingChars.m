@@ -26,9 +26,10 @@
 @implementation LongestSubstringWithoutRepeatingChars
 
 - (void)runTheProblem {
-    NSString *s = @"abcccdefgg";
+//    NSString *s = @"abcccdefgg";
+    NSString *s = @"abcdebfgg";
 //    NSString *s = @"1234567890";
-    NSInteger l = [self lengthOfLongestSubstring:s];
+    NSInteger l = [self lengthOfLongestSubstringOptimized:s];
     NSLog(@"%@: string '%@' lengthOfLongestSubstringOptimized:%ld TC:%f", self.class, s, l, timeComplexity);
 }
 

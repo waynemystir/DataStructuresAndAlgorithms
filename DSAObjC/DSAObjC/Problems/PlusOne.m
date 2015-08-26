@@ -22,7 +22,7 @@
         NSUInteger digit = [digits[j] integerValue];
         if (digit < 9) {
             digits[j] = [NSNumber numberWithInteger:++digit];
-            return digits;
+            return [NSArray arrayWithArray:digits];
         } else {
             digits[j] = [NSNumber numberWithInteger:0];
         }
