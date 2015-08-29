@@ -51,9 +51,7 @@
         if (maxEndingHere > maxSoFar) {
             maxSoFar = maxEndingHere;
             maxEndIndex = i;
-            result = @[[NSNumber numberWithInteger:maxStartIndex],
-                       [NSNumber numberWithInteger:maxEndIndex],
-                       [NSNumber numberWithInteger:maxSoFar]];
+            result = @[@(maxStartIndex), @(maxEndIndex), @(maxSoFar)];
         }
     }
     return result;

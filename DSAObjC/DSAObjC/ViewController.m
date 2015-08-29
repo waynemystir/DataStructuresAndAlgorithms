@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "HashTable.h"
+#import "BinarySearch.h"
+#import "SortingAlgorithms.h"
 #import "WisDigit.h"
 #import "WordBreak.h"
 #import "AddBinary.h"
@@ -54,7 +56,16 @@
     
 //    [[WisDigit new] runThis];
     
-    [[LongestPalindromicSubstring new] runTheProblem];
+//    NSMutableArray *array = [NSMutableArray array];
+//    for (NSInteger i = 1; i <= 1000; i++) [array addObject:@(i)];
+//    [[BinarySearch new] binarySearch:array value:938];
+    
+//    NSMutableArray *array = [NSMutableArray array];
+//    for (NSInteger i = 10; i >= 1; i--) [array addObject:@(i)];
+//    [SortingAlgorithms insertionSort:array];
+//    NSLog(@"insertionSorted:%@", [array componentsJoinedByString:@", "]);
+    
+    [[SortedArrayToBalancedBinarySearchTree new] runTheProblem];
     
 //    HashTable *ht = [[HashTable alloc] initWithSize:1000];
 //    [ht put:@"ab" object:@"albert einstein"];

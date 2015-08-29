@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B0A1C2871B8C2EC200CE7E79 /* TwoSumDataStructureFastFind.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A1C2861B8C2EC200CE7E79 /* TwoSumDataStructureFastFind.m */; };
 		B0A1C28A1B8D154900CE7E79 /* WisDigit.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A1C2891B8D154900CE7E79 /* WisDigit.m */; };
+		B0A1C2921B90056100CE7E79 /* SortingAlgorithms.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A1C2911B90056100CE7E79 /* SortingAlgorithms.m */; };
+		B0A1C2951B90073100CE7E79 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A1C2941B90073100CE7E79 /* BinarySearch.m */; };
 		B0CFFC8D1B8A23710075AB74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFC8C1B8A23710075AB74 /* main.m */; };
 		B0CFFC901B8A23710075AB74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFC8F1B8A23710075AB74 /* AppDelegate.m */; };
 		B0CFFC931B8A23710075AB74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFC921B8A23710075AB74 /* ViewController.m */; };
@@ -67,6 +69,10 @@
 		B0A1C2861B8C2EC200CE7E79 /* TwoSumDataStructureFastFind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoSumDataStructureFastFind.m; sourceTree = "<group>"; };
 		B0A1C2881B8D154900CE7E79 /* WisDigit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WisDigit.h; sourceTree = "<group>"; };
 		B0A1C2891B8D154900CE7E79 /* WisDigit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WisDigit.m; sourceTree = "<group>"; };
+		B0A1C2901B90056100CE7E79 /* SortingAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortingAlgorithms.h; sourceTree = "<group>"; };
+		B0A1C2911B90056100CE7E79 /* SortingAlgorithms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortingAlgorithms.m; sourceTree = "<group>"; };
+		B0A1C2931B90073100CE7E79 /* BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearch.h; sourceTree = "<group>"; };
+		B0A1C2941B90073100CE7E79 /* BinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearch.m; sourceTree = "<group>"; };
 		B0CFFC871B8A23710075AB74 /* DSAObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSAObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CFFC8B1B8A23710075AB74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0CFFC8C1B8A23710075AB74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -177,6 +183,17 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		B0A1C28F1B9004A500CE7E79 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				B0A1C2901B90056100CE7E79 /* SortingAlgorithms.h */,
+				B0A1C2911B90056100CE7E79 /* SortingAlgorithms.m */,
+				B0A1C2931B90073100CE7E79 /* BinarySearch.h */,
+				B0A1C2941B90073100CE7E79 /* BinarySearch.m */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
 		B0CFFC7E1B8A23710075AB74 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +215,7 @@
 		B0CFFC891B8A23710075AB74 /* DSAObjC */ = {
 			isa = PBXGroup;
 			children = (
+				B0A1C28F1B9004A500CE7E79 /* Algorithms */,
 				B0A1C28B1B8D1A4700CE7E79 /* Utils */,
 				B0CFFCB01B8A23D70075AB74 /* Models */,
 				B0CFFCCA1B8A248A0075AB74 /* Problems */,
@@ -461,6 +479,7 @@
 				B0CFFCC51B8A23D70075AB74 /* HashTable.m in Sources */,
 				B0A1C28A1B8D154900CE7E79 /* WisDigit.m in Sources */,
 				B0CFFD1B1B8A248A0075AB74 /* WordBreak.m in Sources */,
+				B0A1C2921B90056100CE7E79 /* SortingAlgorithms.m in Sources */,
 				B0CFFCC31B8A23D70075AB74 /* BinarySearchTree.m in Sources */,
 				B0CFFD191B8A248A0075AB74 /* ValidNumber.m in Sources */,
 				B0A1C2871B8C2EC200CE7E79 /* TwoSumDataStructureFastFind.m in Sources */,
@@ -473,6 +492,7 @@
 				B0CFFC931B8A23710075AB74 /* ViewController.m in Sources */,
 				B0CFFD161B8A248A0075AB74 /* TwoSumDataStructureFastAdd.m in Sources */,
 				B0CFFD121B8A248A0075AB74 /* SortedArrayToBalancedBinarySearchTree.m in Sources */,
+				B0A1C2951B90073100CE7E79 /* BinarySearch.m in Sources */,
 				B0CFFD051B8A248A0075AB74 /* IsHeightBalancedTree.m in Sources */,
 				B0CFFD131B8A248A0075AB74 /* StrStr.m in Sources */,
 				B0CFFD081B8A248A0075AB74 /* LongestSubstringWithoutRepeatingChars.m in Sources */,

@@ -18,13 +18,14 @@
 @implementation SortedArrayToBalancedBinarySearchTree
 
 - (void)runTheProblem {
-    NSArray *array = @[@1, @2, @3, @4, @5, @6, @7];
+    NSArray *array = @[@1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13];
     NodeBST *root = [self sortedArrayToBST:array];
     BinarySearchTree *bst = [[BinarySearchTree alloc] initWithRoot:root nsComparator:^NSComparisonResult(id obj1, id obj2) {
         NSInteger num1 = [obj1 integerValue];
         NSInteger num2 = [obj2 integerValue];
         return num1 == num2 ? NSOrderedSame : num1 < num2 ? NSOrderedAscending : NSOrderedDescending;
     }];
+    NSLog(@"TC:%@ tc:%f", @(timeComplexity), timeComplexity);
     [bst traverseTreeInOrder];
 }
 
