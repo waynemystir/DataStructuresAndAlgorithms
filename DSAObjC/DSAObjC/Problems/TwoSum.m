@@ -44,14 +44,10 @@
     for (int j = 0; j < numbers.count; j++) {
         timeComplexity++;
         NSInteger x = [numbers[j] integerValue];
-        id indexOfTargetLessX = [map objectForKey:[NSNumber numberWithInteger:(target - x)]];
-        if (indexOfTargetLessX) {
-            return [NSArray arrayWithObjects:[NSNumber numberWithInteger:j],
-                    [NSNumber numberWithInteger:x],
-                    indexOfTargetLessX,
-                    [NSNumber numberWithInteger:(target - x)], nil];
-        }
-        [map setObject:[NSNumber numberWithInteger:j] forKey:[NSNumber numberWithInteger:x]];
+        id indexOfTargetLessX = [map objectForKey:@(target - x)];
+        if (indexOfTargetLessX)
+            return [NSArray arrayWithObjects:@(j), @(x), indexOfTargetLessX, @(target - x), nil];
+        [map setObject:@(j) forKey:@(x)];
     }
     return nil;
 }

@@ -47,6 +47,7 @@
 // O(n^2)
 - (NSString *)wordBreakMemoized:(NSString *)input dict:(NSSet *)dict {
     if ([self checkDictionary:input]) return input;
+    // TODO: Do I need to check for non-NSNull here?
     if ([self.memoized objectForKey:input]) {
         return [self.memoized objectForKey:input];
     }

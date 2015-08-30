@@ -65,7 +65,7 @@
 //    [SortingAlgorithms insertionSort:array];
 //    NSLog(@"insertionSorted:%@", [array componentsJoinedByString:@", "]);
     
-    [[SortedArrayToBalancedBinarySearchTree new] runTheProblem];
+    [[WordBreak new] runTheProblem];
     
 //    HashTable *ht = [[HashTable alloc] initWithSize:1000];
 //    [ht put:@"ab" object:@"albert einstein"];
