@@ -38,6 +38,7 @@
 #import "MinimumDepthBinaryTree.h"
 #import "IsHeightBalancedTree.h"
 #import "SortedArrayToBalancedBinarySearchTree.h"
+#import "AddTwoNumberStrings.h"
 
 @interface ViewController ()
 
@@ -65,7 +66,7 @@
 //    [SortingAlgorithms insertionSort:array];
 //    NSLog(@"insertionSorted:%@", [array componentsJoinedByString:@", "]);
     
-    [[WordBreak new] runTheProblem];
+    [[PalindromeNumber new] runTheProblem];
     
 //    HashTable *ht = [[HashTable alloc] initWithSize:1000];
 //    [ht put:@"ab" object:@"albert einstein"];

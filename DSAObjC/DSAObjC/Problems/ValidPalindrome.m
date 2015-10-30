@@ -24,7 +24,8 @@
 
 - (void)runTheProblem {
 //    NSString *str = @"12345678900987654321";
-    NSString *str = @"A man, a plan, a canal: Panama";
+//    NSString *str = @"A man, a plan, a canal: Panama";
+    NSString *str = @"abcdefedcba";
 //    NSString *str = nil;
     NSString *isPalindrome = [self isValidPalindrome:str] ? @"YES" : @"NO";
     NSLog(@"%@: '%@' isPalindrome:%@ TC:%f", self.class, str, isPalindrome, timeComplexity);

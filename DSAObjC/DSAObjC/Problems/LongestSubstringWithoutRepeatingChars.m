@@ -35,9 +35,7 @@
 
 - (NSInteger)lengthOfLongestSubstringOptimized:(NSString *)s {
     NSMutableArray *charMap = [NSMutableArray arrayWithCapacity:256];
-    for (int k = 0; k < 256; k++) {
-        [charMap addObject:[NSNumber numberWithInteger:-1]];
-    }
+    for (int k = 0; k < 256; k++) [charMap addObject:@(-1)];
     NSInteger i = 0, maxLen = 0;
     for (NSInteger j = 0; j < s.length; j++) {
         timeComplexity++;
@@ -45,7 +43,7 @@
             timeComplexity++;
             i = [charMap[[s characterAtIndex:j]] integerValue] + 1;
         }
-        charMap[[s characterAtIndex:j]] = [NSNumber numberWithInteger:j];
+        charMap[[s characterAtIndex:j]] = @(j);
         maxLen = MAX(j - i + 1, maxLen);
     }
     return maxLen;
@@ -53,9 +51,7 @@
 
 - (NSInteger)lengthOfLongestSubstring:(NSString *)s {
     NSMutableArray *exist = [NSMutableArray arrayWithCapacity:256];
-    for (int k = 0; k < 256; k++) {
-        [exist addObject:[NSNumber numberWithBool:NO]];
-    }
+    for (int k = 0; k < 256; k++) [exist addObject:@(NO)];
     int i = 0, maxLen = 0;
     for (int j = 0; j < s.length; j++) {
         timeComplexity++;

@@ -26,7 +26,24 @@
     NSLog(@"%@ + %@ = %@", a, b, sum);
 }
 
-- (NSString *)addBinary:(NSString *)a binary2:(NSString *)b {
+- (NSString *)addBinary:(NSString *)x binary2:(NSString *)y {
+    NSString *responseString = @"";
+    int carry = 0;
+    NSInteger i = x.length - 1;
+    NSInteger j = y.length - 1;
+    
+    while (i >= 0 || j >= 0) {
+        int xDig = i < 0 ? 0 : [x characterAtIndex:i--] - '0';
+        int yDig = j < 0 ? 0 : [y characterAtIndex:j--] - '0';
+        int sum = xDig + yDig + carry;
+        responseString = [NSString stringWithFormat:@"%@%@", @(sum % 2), responseString];
+        carry = sum / 2;
+    }
+    
+    return carry == 0 ? responseString : [NSString stringWithFormat:@"%@%@", @(1), responseString];
+}
+
+- (NSString *)OLDaddBinary:(NSString *)a binary2:(NSString *)b {
     NSString *theSum = @"";
     long i = a.length - 1, j = b.length - 1;
     int carry = 0;
@@ -50,7 +67,7 @@
     return theSum;
 }
 
-- (NSString *)addBinaryOld:(NSString *)a binary2:(NSString *)b {
+- (NSString *)addBinaryOldOLD:(NSString *)a binary2:(NSString *)b {
     NSString *res = @"";
     unsigned long N = a.length, M = b.length;
     long i = N - 1, j = M - 1;

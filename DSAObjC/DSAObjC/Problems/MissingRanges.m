@@ -22,12 +22,10 @@
     NSInteger prev = start - 1;
     for (NSInteger i = 0; i <= vals.count; i++) {
         NSInteger curr = (i == vals.count) ? end + 1 : [vals[i] integerValue];
-        if (curr - prev >= 2) {
-            [ranges addObject:[self daRange:(prev + 1) to:(curr - 1)]];
-        }
+        if (curr - prev >= 2) [ranges addObject:[self daRange:(prev + 1) to:(curr - 1)]];
         prev = curr;
     }
-    return [NSArray arrayWithArray:ranges];
+    return [ranges copy];
 }
 
 - (NSString *)daRange:(NSInteger)from to:(NSInteger)to {

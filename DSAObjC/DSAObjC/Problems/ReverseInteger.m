@@ -20,9 +20,7 @@
 - (NSInteger)reverseSimple:(NSInteger)x {
     NSInteger ret = 0;
     while (x != 0) {
-        if (x > NSIntegerMax / 10 || x < NSIntegerMin / 10) {
-            return 0;
-        }
+        if (x > NSIntegerMax / 10 || x < NSIntegerMin / 10) return 0;
         ret = ret * 10 + x % 10;
         x /= 10;
     }

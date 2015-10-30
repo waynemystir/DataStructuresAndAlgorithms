@@ -48,9 +48,7 @@
 - (NSString *)wordBreakMemoized:(NSString *)input dict:(NSSet *)dict {
     if ([self checkDictionary:input]) return input;
     // TODO: Do I need to check for non-NSNull here?
-    if ([self.memoized objectForKey:input]) {
-        return [self.memoized objectForKey:input];
-    }
+    if ([self.memoized objectForKey:input]) return [self.memoized objectForKey:input];
     
     NSUInteger len = input.length;
     for (int i = 1; i < len; i++) {
@@ -70,7 +68,7 @@
     return nil;
 }
 
-// O(2^n(
+// O(2^n)
 - (NSString *)wordBreak:(NSString *)input dict:(NSSet *)dict {
     if ([self checkDictionary:input]) return input;
     NSUInteger len = input.length;

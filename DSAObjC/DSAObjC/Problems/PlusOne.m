@@ -21,17 +21,15 @@
     for (NSInteger j = digits.count - 1; j >= 0; j--) {
         NSUInteger digit = [digits[j] integerValue];
         if (digit < 9) {
-            digits[j] = [NSNumber numberWithInteger:++digit];
-            return [NSArray arrayWithArray:digits];
-        } else {
-            digits[j] = [NSNumber numberWithInteger:0];
-        }
+            digits[j] = @(++digit);
+            return [digits copy];
+        } else digits[j] = @(0);
     }
     
-    [digits addObject:[NSNumber numberWithInteger:0]];
-    digits[0] = [NSNumber numberWithInteger:1];
+    [digits addObject:@(0)];
+    digits[0] = @(1);
     
-    return [NSArray arrayWithArray:digits];
+    return [digits copy];
 }
 
 @end

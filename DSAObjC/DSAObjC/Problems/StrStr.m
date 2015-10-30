@@ -35,7 +35,8 @@
             if (j == needle.length) return i;
             if (i + j == haystack.length) return -1;
             if ([needle characterAtIndex:j] != [haystack characterAtIndex:(i + j)]) break;
-        } }
+        }
+    }
     return -1;
 }
 

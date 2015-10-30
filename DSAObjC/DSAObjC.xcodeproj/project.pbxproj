@@ -11,6 +11,7 @@
 		B0A1C28A1B8D154900CE7E79 /* WisDigit.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A1C2891B8D154900CE7E79 /* WisDigit.m */; };
 		B0A1C2921B90056100CE7E79 /* SortingAlgorithms.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A1C2911B90056100CE7E79 /* SortingAlgorithms.m */; };
 		B0A1C2951B90073100CE7E79 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A1C2941B90073100CE7E79 /* BinarySearch.m */; };
+		B0A623711BB38CC500FC99C5 /* AddTwoNumberStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A623701BB38CC500FC99C5 /* AddTwoNumberStrings.m */; };
 		B0CFFC8D1B8A23710075AB74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFC8C1B8A23710075AB74 /* main.m */; };
 		B0CFFC901B8A23710075AB74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFC8F1B8A23710075AB74 /* AppDelegate.m */; };
 		B0CFFC931B8A23710075AB74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CFFC921B8A23710075AB74 /* ViewController.m */; };
@@ -73,6 +74,8 @@
 		B0A1C2911B90056100CE7E79 /* SortingAlgorithms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortingAlgorithms.m; sourceTree = "<group>"; };
 		B0A1C2931B90073100CE7E79 /* BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearch.h; sourceTree = "<group>"; };
 		B0A1C2941B90073100CE7E79 /* BinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearch.m; sourceTree = "<group>"; };
+		B0A6236F1BB38CC500FC99C5 /* AddTwoNumberStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTwoNumberStrings.h; sourceTree = "<group>"; };
+		B0A623701BB38CC500FC99C5 /* AddTwoNumberStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTwoNumberStrings.m; sourceTree = "<group>"; };
 		B0CFFC871B8A23710075AB74 /* DSAObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSAObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CFFC8B1B8A23710075AB74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0CFFC8C1B8A23710075AB74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -319,6 +322,8 @@
 				B0CFFD001B8A248A0075AB74 /* WordBreak.m */,
 				B0CFFCCB1B8A248A0075AB74 /* AddBinary.h */,
 				B0CFFCCC1B8A248A0075AB74 /* AddBinary.m */,
+				B0A6236F1BB38CC500FC99C5 /* AddTwoNumberStrings.h */,
+				B0A623701BB38CC500FC99C5 /* AddTwoNumberStrings.m */,
 				B0CFFCF31B8A248A0075AB74 /* TwoSum.h */,
 				B0CFFCF41B8A248A0075AB74 /* TwoSum.m */,
 				B0CFFCF71B8A248A0075AB74 /* TwoSumSorted.h */,
@@ -505,6 +510,7 @@
 				B0CFFD141B8A248A0075AB74 /* SwapNodesInPairs.m in Sources */,
 				B0CFFC8D1B8A23710075AB74 /* main.m in Sources */,
 				B0CFFD0A1B8A248A0075AB74 /* MaxSumSubArray.m in Sources */,
+				B0A623711BB38CC500FC99C5 /* AddTwoNumberStrings.m in Sources */,
 				B0CFFD0E1B8A248A0075AB74 /* PlusOne.m in Sources */,
 				B0CFFD0F1B8A248A0075AB74 /* ReverseInteger.m in Sources */,
 				B0CFFD061B8A248A0075AB74 /* IsOneEditDistance.m in Sources */,

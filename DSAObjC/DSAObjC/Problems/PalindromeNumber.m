@@ -17,17 +17,13 @@
 }
 
 - (BOOL)isPalindromeNumber:(NSInteger)x {
-    if (x < 0 || x > NSIntegerMax) {
-        return NO;
-    }
+    if (x < 0 || x > NSIntegerMax) return NO;
     while (x > 0) {
         NSInteger lx = log10l(x);
         NSInteger p = powl(10, lx);
         NSInteger firstDigit = x / p;
         NSInteger lastDigit = x % 10;
-        if (firstDigit != lastDigit) {
-            return NO;
-        }
+        if (firstDigit != lastDigit) return NO;
         x -= firstDigit * p;
         x /= 10;
     }
