@@ -50,7 +50,7 @@
     [super viewDidLoad];
     
     UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(20, 100, 100, 30)];
-    l.text = @"Wayne";
+    l.text = @"Waynester";
     l.textColor = [UIColor whiteColor];
     l.backgroundColor = [UIColor blackColor];
     [self.view addSubview:l];
